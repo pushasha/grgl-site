@@ -18,13 +18,38 @@
     <!-- Plugins CSS -->    
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+	<link rel="stylesheet"  href="assets/plugins/lightslider/lightSlider.css"/>
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles-4.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/style.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	<!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>     
+    <script type="text/javascript" src="assets/js/main.js"></script>   
+	
+	<!-- Lightslider JS -->
+	<script type="text/javascript" src="assets/plugins/lightslider/jquery.lightSlider.min.js"></script>
+	<script>
+		 $(document).ready(function() {
+			$("#slider").lightSlider({
+				loop:true,
+				auto: true,
+				pause: 5000,
+				keyPress:true,
+				item: 1,
+				slideMargin: 0
+			});
+		});
+    </script>
 </head> 
 
 <body data-spy="scroll">
@@ -62,17 +87,78 @@
     <!-- ******PROMO****** -->
     <section id="promo" class="promo section offset-header">
         <div class="container text-center">
-            <h2 class="title">GRGL</h2>
-            <p class="intro">An extensible, easy-to-use code library to simplify the management of common RPG systems.</p>
-            <div class="btns">
-                <a class="btn btn-cta-secondary" href="http://github.com/pushasha/GRGL/" target="_blank">Demo</a>
-                <a class="btn btn-cta-primary" href="https://github.com/pushasha/GRGL/archive/master.zip">Download</a>
-            </div>
-            <ul class="meta list-inline">
-                <li><a href="http://github.com/pushasha/GRGL" target="_blank">View on GitHub</a></li>
-                <li><a href="http://github.com/pushasha/GRGL" target="_blank">Full Documentation</a></li>
-                <li>Created by  <a href="http://www.sarah-plotkin.com" target="_blank">Sarah Plotkin</a></li>
-            </ul><!--//meta-->
+			<div class="slider">
+				<ul id="slider" class="content-slider">
+					<li>
+						<h2 class="title">GRGL</h2>
+						<p class="intro">An extensible, easy-to-use code library to simplify the management of common RPG systems.</p>
+						<a class="btn btn-cta-primary scrollto" href="#about">Find Out More  <span class="caret"></span></a>
+					</li>
+					<li>
+						<div class="row">
+							<div class="item col-md-8 col-md-offset-2">
+								<h3>GRGL is...</h2>
+								<h4>Designed for Developers</h3>
+								<p class="sub">Every method and class is fully documented with <span class="emph">IntelliSense-compatible XML comments</span>, and follows MSDN C# conventions for easy-to-read code.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="item col-md-8 col-md-offset-2">
+								<h3>GRGL is a...</h2>
+								<h4>Time-Saver</h3>
+								<p class="sub">GRGL keeps you from <span class="emph">re-inventing the wheel</span> &#8212; commonly-used game elements and systems are provided as concrete classes and interfaces.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="item col-md-8 col-md-offset-2">
+								<h3>GRGL has...</h2>
+								<h4>Game Engine Integration</h3>
+								<p class="sub">Written in C# .NET, allowing for <span class="emph">easy integration into popular game engines</span> such as Unity, Unreal Engine, and Microsoft XNA.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="item col-md-8 col-md-offset-2">
+								<h3>GRGL is...</h2>
+								<h4>Debug-Friendly</h3>
+								<p class="sub">GRGL is structured for <span class="emph">easy unit-testing and debugging</span>. No more time wasted on complex unit-test writing and re-writing.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="item col-md-8 col-md-offset-2">
+								<h3>GRGL is...</h2>
+								<h4>Easy to Customize</h3>
+								<p class="sub">Systems are abstracted at every level of complexity, making them <span class="emph">easy to extend and customize</span>.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="item col-md-8 col-md-offset-2">
+								<h3>GRGL is...</h2>
+								<h4>Free and Open-Source</h3>
+								<p class="sub">GRGL is <span class="emph">free to use</span>, and <span class="emph">open-source</span> under the GNU Lesser General Public License.</p>
+							</div>
+						</div>					
+					</li>
+				</ul>
+			</div>
+			<div class="btns">
+				<a class="btn btn-cta-secondary" href="http://github.com/pushasha/GRGL/" target="_blank">Demo</a>
+				<a class="btn btn-cta-primary" href="https://github.com/pushasha/GRGL/archive/master.zip">Download</a>
+			</div>
+			<ul class="meta list-inline">
+				<li><a href="http://github.com/pushasha/GRGL" target="_blank">View on GitHub</a></li>
+				<li><a href="http://github.com/pushasha/GRGL" target="_blank">Full Documentation</a></li>
+				<li>Created by  <a href="http://www.sarah-plotkin.com" target="_blank">Sarah Plotkin</a></li>
+			</ul><!--//meta-->			
         </div><!--//container-->
         <div class="social-media">
             <div class="social-media-inner container text-center">
@@ -117,8 +203,8 @@
                         <i class="fa fa-clock-o"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">Time saver</h3>
-                        <p>GRGL keeps you from re-inventing the wheel &#8212; commonly-used game elements and systems are provided as concrete class and interfaces.</p>
+                        <h3 class="sub-title">Time-saver</h3>
+                        <p>GRGL keeps you from re-inventing the wheel &#8212; commonly-used game elements and systems are provided as concrete classes and interfaces.</p>
                     </div><!--//content-->
                 </div><!--//item-->
                 <div class="item col-md-4 col-sm-6 col-xs-12">
@@ -145,7 +231,7 @@
                         <i class="fa fa-code"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">Easy to customise</h3>
+                        <h3 class="sub-title">Easy to customize</h3>
                         <p>Systems are abstracted at every level of complexity, making them easy to extend and customize.</p>
                     </div><!--//content-->
                 </div><!--//item-->
@@ -202,7 +288,7 @@
                 <p class="intro  text-center">Feel free to get in touch if you have any questions or suggestions.</p>
                 <div class="author-message">                      
                     <div class="profile">
-                        <img class="img-responsive img-circle" src="assets/images/profile.png" alt="" />
+                        <img class="img-responsive img-circle" src="assets/img/profile.png" alt="" />
                     </div><!--//profile-->
                     <div class="speech-bubble">
                         <h3 class="sub-title">Want to keep track of GRGL's progress?</h3>
@@ -234,14 +320,10 @@
         </div><!--//container-->
     </footer><!--//footer-->
      
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
-    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
-    <script type="text/javascript" src="assets/js/main.js"></script>       
+  
+	
+
+	
 </body>
 </html> 
 
