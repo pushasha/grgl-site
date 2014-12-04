@@ -175,7 +175,7 @@ pre code {
 .promo {
   background: #50c8c9;
   color: #fff;
-  padding-top: 150px;
+  /*padding-top: 150px;*/
 }
 .promo .title {
   font-size: 98px;
@@ -191,6 +191,11 @@ pre code {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+
+.promo .btns {
+  margin-bottom: 15px;
+}
+
 .promo .btns .btn {
   margin-right: 15px;
   font-size: 18px;
@@ -538,6 +543,58 @@ pre code {
   font-size: 26px;
   text-align: center;
   padding: 0;
+}
+
+/* ======= lightSlider ======= */
+
+.slider {
+	padding-bottom: 40px;
+}
+
+.slider ul{
+	list-style: none outside none;
+	padding-left: 0;
+}
+.content-slider li{
+	/*background-color: #184e4e;*/
+	text-align: center;
+	color: #FFF;
+	height: 500px;
+	padding: 60px;
+}
+
+
+
+/* ======= Slide Content ======= */
+
+.slider h3{
+	font-size: 24px;
+	text-align: left;
+	color: #309b9c;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.slider h4 {
+	margin-top: 0px;
+	padding-top: 0px;
+	font-size: 30px;
+	text-align: left;
+	color: #1e6162;
+}
+
+.sub{
+	text-align: left;
+	color: #FFF;
+	font-size: 28px !important;
+	max-width: 680px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.sub .emph{
+	color: #FFBE57;
+
 }
 /* ======= Footer ======= */
 .footer {
